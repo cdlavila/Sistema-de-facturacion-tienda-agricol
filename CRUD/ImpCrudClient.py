@@ -1,7 +1,7 @@
-from ICrud import ICrud
+from CRUD.ICrud import ICrud
 from model.Client import Client
 
 
 class ImpCrudClient(ICrud):
-    def create(self, **kwargs):
+    def create(**kwargs):
         return Client(**kwargs)

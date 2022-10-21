@@ -58,7 +58,7 @@ class Invoice:
         product_number = 1
         print('Productos comprados:')
         for product in products:
-            print(f'\tProducto No.{product_number}: {product.name}, precio: {product.precio}')
+            print(f'\tProducto No.{product_number}: {product.name}, precio: {product.price}')
             product_number += 1
         print(f'Valor total de la Compra: {self.total_value}')
 

@@ -1,7 +1,7 @@
-from ICrud import ICrud
+from CRUD.ICrud import ICrud
 from model.ControlFertilizer import ControlFertilizer
 
 
 class ImpCrudControlFertilizer(ICrud):
-    def create(self, **kwargs):
+    def create(**kwargs):
         return ControlFertilizer(**kwargs)
