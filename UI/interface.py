@@ -66,7 +66,7 @@ def print_invoice(invoice):
     amount_received = float(input('\nIngrese el valor recibido: '))
     print('\n________________________________________________')
     print('TIENDA AGRÍCOLA')
-    print('\n________________________________________________')
+    print('________________________________________________')
     invoice.print()
     invoice.client.print()
     invoice.print_products()
