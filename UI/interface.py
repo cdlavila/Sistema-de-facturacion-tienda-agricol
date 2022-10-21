@@ -1,9 +1,9 @@
 def welcome_message():
     return """
-    ----------------------------------------------------------
-    BIENVENIDO AL SISTEMA DE FACTURACIÓN DE LA TIENDA AGRÍCOLA
-    ----------------------------------------------------------
-    """
+----------------------------------------------------------
+BIENVENIDO AL SISTEMA DE FACTURACIÓN DE LA TIENDA AGRÍCOLA
+----------------------------------------------------------
+"""
 
 
 def leave_message():
@@ -30,7 +30,7 @@ def read_product_control():
     product_name = input('\tIngrese el nombre del producto: ')
     ica_registration = input('\tIngrese el registro ICA del producto: ')
     application_frequency = input('\tIngrese la frecuencia de aplicación del producto: ')
-    product_price = input('\tIngrese el precio del producto: ')
+    product_price = float(input('\tIngrese el precio del producto: '))
     return {
         'name': product_name,
         'ica_registration': ica_registration,
@@ -53,10 +53,10 @@ def read_product_antibiotic():
     product_name = input('\tIngrese el nombre del producto: ')
     animal_type = input('\tIngrese el tipo de animal: ')
     product_dose = input('\tIngrese la dosis: ')
-    product_price = input('\tIngrese el precio del producto: ')
+    product_price = float(input('\tIngrese el precio del producto: '))
     return {
         'name': product_name,
-        'animal': animal_type,
+        'animal_type': animal_type,
         'dose': product_dose,
         'price': product_price
     }
@@ -66,6 +66,7 @@ def print_invoice(invoice):
     amount_received = float(input('\nIngrese el valor recibido: '))
     print('\n________________________________________________')
     print('TIENDA AGRÍCOLA')
+    print('\n________________________________________________')
     invoice.print()
     invoice.client.print()
     invoice.print_products()
