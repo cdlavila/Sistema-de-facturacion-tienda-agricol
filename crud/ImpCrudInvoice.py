@@ -1,4 +1,4 @@
-from CRUD.ICrud import ICrud
+from crud.ICrud import ICrud
 from model.Invoice import Invoice
 
 

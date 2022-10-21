@@ -1,11 +1,11 @@
 import random
 from ui import interface
 from datetime import datetime
-from CRUD.ImpCrudClient import ImpCrudClient
-from CRUD.ImpCrudAntibiotic import ImpCrudAntibiotic
-from CRUD.ImpCrudControlPlague import ImpCrudControlPlague
-from CRUD.ImpCrudControlFertilizer import ImpCrudControlFertilizer
-from CRUD.ImpCrudInvoice import ImpCrudInvoice
+from crud.ImpCrudClient import ImpCrudClient
+from crud.ImpCrudAntibiotic import ImpCrudAntibiotic
+from crud.ImpCrudControlPlague import ImpCrudControlPlague
+from crud.ImpCrudControlFertilizer import ImpCrudControlFertilizer
+from crud.ImpCrudInvoice import ImpCrudInvoice
 
 if __name__ == '__main__':
     print(interface.welcome_message())
