@@ -1,4 +1,4 @@
-from UI import Interfaz
+from ui import Interfaz
 
 
 print('\nBIENVENIDO AL SISTEMA DE FACTURACIÓN DE LA TIENDA AGRÍCOLA, INGRESE TODAS LAS FACTURAS QUE DESEE')
